@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 
 /* navbar */
 
@@ -19,6 +22,10 @@
     z-index: 10;
 }
 
+#naving {
+    transition: 0.3s;
+
+}
 .imagebar img {
     width: 108px;
 }
@@ -32,6 +39,14 @@
     font-weight: normal;
     font-size: 16px;
     color: white;
+}
+/* sec. logo */
+.second-logo {
+    display: none;
+}
+
+.second-logo img {
+    width: 108px;
 }
 
 /* background img,video */
@@ -72,16 +87,382 @@
     margin-bottom: 12px;
 }
 
-.text-box button {
-    padding: 17px 55px;
-    border: none;
-    border-radius: 20px;
+.text-box button a {
+    color: black !important;
+    text-decoration: none !important;
+    font-family: Georgia, serif !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+}
+
+
+.text-box button:hover a {
+    color: white !important;
+}
+
+.text-box {
+    font-family: ...;
+}  
+
+a {
+    font-size: ...;
+}
+/* main start */
+#bigbox{
+      width: 100%;
+    height: 600px;
+    background-color: rgb(234, 234, 237);
+}
+
+.allboxs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+   margin-top: -30px;
+    
+}
+
+ .text{
+     font-size: 20px;
+     padding: 4% 40%;
+    text-align: center;
+    font-style: calc(bold);
+}
+.insetbutton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.insetbutton button {
+    padding: 17px 70px;
+    background: rgb(144, 107, 107);
+    border: 1px solid rgb(48, 45, 45);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.insetbutton button:hover {
+    background: rgb(249, 248, 248);
+    color: rgb(0, 0, 0);
+}
+
+#ananta{
+    height: 460px;
+    width: 100%;
+    background-color:#d3d1cb;
+}
+.text-3box{
+     font-size: 24px;
+    text-align: center;
+padding-top: 2%;  
+  margin-right: 68%;
+
+
+}
+.itembox3{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%; 
+    margin-right: 31%; 
+    gap: 11px;
+}
+
+
+/* comp... */
+
+#containers{
+    height: 560px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container2 {
+    width: 700px;
+    margin-left:5% ; 
+   text-align: justify;
+}
+.container2 p {
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+}
+
+.container2 h2 {
+    font-size: 30px;
+    color: rgb(127, 103, 103);
+}
+
+/* complete 2 box code  */
+
+/* one iamge one text code */
+
+#info-section{
+    height: 320px;
+    width: 100%;
+    background-color: rgb(219, 213, 204);
+    text-align: center;
+    padding: 6%;
+}
+
+#info-section p{
+    font-size: 20px;
+    
+}
+
+
+/* comp.one iamge one text code   */
+
+.image-layout {
+    display: flex;
+    width: 100%;
+    height: 630px;
+    padding-left: 8%;
+}
+
+.large-image {
+    width: 50%;
+}
+
+.large-image img {
+    width: 97%;
+    height: 96%;
+    object-fit: cover;
+}
+
+.small-images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-images div {
+    height: 50%;
+}
+
+.small-images img {
+    width: 100%;
+    height: 96%;
+    object-fit: cover;
+}
+
+
+
+/* comp... */
+
+.marquee-container {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.marquee-container marquee {
+    height: 100px;
+    line-height: 100px;
+}
+
+.marquee-container p {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 25px;
+    vertical-align: middle;
+}
+
+.marquee-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+/* compalete */
+
+#door{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doors2 {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.doors2 p {
+    margin-top: -90px;
+    font-style: oblique;
+    font-size:23px ;
+}
+
+/*  comp. 2 img code */
+
+.styles {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Small image box */
+.small-image-box {
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  width: 350px;
+  height: 560px;
+  overflow: hidden;
+  border-radius: 30px;
+  
+}
+
+.small-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text */
+.styles-text {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.styles-text h5 {
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+.styles-text h1 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.styles-text h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.styles-text button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: rgb(144, 107, 107);
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 40px;
+  border-radius: 20px;
+}
+
+.styles-text button:hover {
+  color: rgb(12, 12, 12);
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
     background: white;
+    padding: 80px 58px 65px;
+    color: #555;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.9fr 1.3fr;
+    gap: 50px;
+}
+
+.footer-column h3 {
     font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #222;
+    margin-bottom: 28px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.footer-column a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-column a:hover {
+    color: black;
+}
+
+/* Phone input */
+.whatsapp input {
+    width: 317px;
+    height: 46px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    display: block;
+}
+
+.whatsapp button {
+    width: 149px;
+    height: 44px;
+    margin-top: 16px;
+    background: #222;
+    color: white;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
-.text-box button:hover {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+
+.whatsapp button:hover {
+    background: black;
+}
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 55px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.instagram {
+    font-size: 25px;
+    color: #666;
 }
