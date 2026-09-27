@@ -63,6 +63,13 @@ body {
     height: 100%;
     object-fit: cover;
 }
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .text-box {
     position: absolute;
@@ -87,27 +94,26 @@ body {
     margin-bottom: 12px;
 }
 
-.text-box button a {
-    color: black !important;
-    text-decoration: none !important;
-    font-family: Georgia, serif !important;
-    font-size: 20px !important;
-    font-weight: bold !important;
-    letter-spacing: 3px !important;
+.text-box button {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(84, 42, 11);
+    border-radius: 20px;
+    border: none;
 }
 
+.text-box button a{
+    font-style: bold;
+    color: #f0ecec;
+}
 
 .text-box button:hover a {
-    color: white !important;
+    color: rgb(18, 2, 2);
+    background-color: #ddd; 
+
 }
 
-.text-box {
-    font-family: ...;
-}  
 
-a {
-    font-size: ...;
-}
 /* main start */
 #bigbox{
       width: 100%;
